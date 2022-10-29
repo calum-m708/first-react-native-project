@@ -3,7 +3,7 @@ import GoalItem from './components/GoalItem';
 import GoalInput from './components/GoalInput';
 import { StatusBar } from 'expo-status-bar';
 
-import { StyleSheet, View, FlatList, Button } from 'react-native';
+import { StyleSheet, View, FlatList, Button, Text } from 'react-native';
 
 export default function App() {
   const [modalIsVisible, setModalIsVisible] = useState(false);
@@ -44,22 +44,26 @@ export default function App() {
           visible={modalIsVisible}
         />
         <View style={styles.goalsContainer}>
-          <FlatList
-            data={courseGoals}
-            renderItem={(itemData) => {
-              return (
-                <GoalItem
-                  text={itemData.item.text}
-                  index={itemData.index}
-                  id={itemData.item.id}
-                  onDeleteItem={deleteGoalHandler}
-                />
-              );
-            }}
-            keyExtractor={(item, index) => {
-              return item.id;
-            }}
-          />
+          {!courseGoals.length ? (
+            <Text style={styles.defaultText}>Add some goals!</Text>
+          ) : (
+            <FlatList
+              data={courseGoals}
+              renderItem={(itemData) => {
+                return (
+                  <GoalItem
+                    text={itemData.item.text}
+                    index={itemData.index}
+                    id={itemData.item.id}
+                    onDeleteItem={deleteGoalHandler}
+                  />
+                );
+              }}
+              keyExtractor={(item, index) => {
+                return item.id;
+              }}
+            />
+          )}
         </View>
       </View>
     </>
@@ -76,5 +80,11 @@ const styles = StyleSheet.create({
 
   goalsContainer: {
     flex: 5
+  },
+
+  defaultText: {
+    flex: 5,
+    textAlign: 'center',
+    textAlignVertical: 'center'
   }
 });
