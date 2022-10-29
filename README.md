@@ -30,11 +30,22 @@ I was very impressed with how easily I was able to start a project in Expo, chec
 
 I was very impressed with the quality of the documentation for React Native, especially in how it demarcates which features work for iOS and Android. I made use of the 'Android Ripple' effect on the `<Pressable>` components that made up the Task List, but due to the lack of compatibility with iOS, I used a simple Style change for iOS.
 
+## Takeaways and Ideas for Expanding
+
+Since finishing this app, I have decided to purchase and continue learning React Native from Max Schwarzmüller, as I thought his teaching style was very effective, and React Native is a framework that I would like to continue to learn more about. I'm not sure if the rest of Max's course focuses on expanding this app, or if it starts a new app, but this is the list of ideas I had for expanding the app.
+
+- Allow users to edit tasks
+- Priority ratings for tasks, colours to reflect priority on the task list
+- Add deadlines for tasks
+- Allow tasks to be sorted - Sort by date added, alphabetical order, deadline date, priority
+- Allow grouping of tasks and/or subtasks
+- Building a backend and login feature to allow tasks to be stored centrally and accessed on multiple devices.
+
 ## App Screenshots
 
 **Empty Goal List**
 
-![Empty Goal List](./rncourse\assets\readme-screenshots\1-emptygoallist.png)
+![Empty Goal List](./RNCourse\assets\readme-screenshots\1-emptygoallist.png)
 
 **Add Goal Modal**
 
@@ -43,11 +54,3 @@ I was very impressed with the quality of the documentation for React Native, esp
 **Populated Goal List**
 
 ![Populated Goal List](./RNCourse/assets/readme-screenshots/3-PopulatedGoalList.PNG)
-
-**Ideas for Expanding**
-
-- Allow users to edit tasks
-- Priority ratings for tasks, colours to reflect priority on the task list
-- Add deadlines for tasks
-- Allow tasks to be sorted - Sort by date added, alphabetical order, deadline date, priority
-- Allow grouping of tasks and/or subtasks
