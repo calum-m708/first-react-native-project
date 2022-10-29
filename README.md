@@ -45,7 +45,7 @@ Since finishing this app, I have decided to purchase and continue learning React
 
 **Empty Goal List**
 
-![Empty Goal List](./RNCourse/assets/readme-screenshots/1-EmptyGoalList.png)
+![Empty Goal List](./RNCourse/assets/readme-screenshots/1-EmptyGoalList.PNG)
 
 **Add Goal Modal**
 
